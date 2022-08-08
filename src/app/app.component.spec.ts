@@ -20,10 +20,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'bash-official-site'`, () => {
+  it(`should have as title 'bash'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('bash-official-site');
+    expect(app.title).toEqual('bash');
   });
 
   it('should render title', () => {

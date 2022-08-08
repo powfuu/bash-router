@@ -1,0 +1,5 @@
+<div class="header">
+    <img [src]="isDark ? '/../../favicon.ico' : '/../../assets/favicon_light.png'" id="logo"/>
+    <p id='app-title'>Bash Router</p>
+    <i id="themeSwitcher" (click)="handleChangeColorscheme()" [ngClass]="isDark ? 'fa-solid fa-moon' : 'fa-solid fa-sun'"></i>
+</div>

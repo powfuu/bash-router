@@ -1,1 +1,300 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root.light {
+  --background-color:#bec4d8;
+  --background-color-window:#DAE0F5;
+  --foreground-color:#506477;
+  --shadow-color:#506477;
+  --green:#00b77a;
+  --blue:#3a76af;
+  --yellow:#aa8b00;
+  --window-topheader-bg:#ccd2e5;
+}
+:root.dark {
+  --background-color:#242933;
+  --background-color-window:#13161c;
+  --foreground-color:#c0cadb;
+  --shadow-color:black;
+  --green:#73c1a9;
+  --blue:#527FAF;
+  --yellow:#f5d827;
+  --window-topheader-bg:#0d1014;
+}
+html,body{
+  background:var(--background-color);
+}
+*{
+  margin:0;
+  padding:0;
+  color:var(--foreground-color);
+  transition:.4s ease-in-out;
+  font-family: 'Open Sans', sans-serif;
+}
+.section{
+  background:var(--background-color);
+  display:flex;
+  justify-content:center;
+  display:flex;
+  align-items:center;
+}
+.header{
+  background:var(--background-color);
+  width:100%;
+  position:fixed;
+  padding:25px;
+}
+.window{
+  position:relative;
+  background:var(--background-color-window);
+  height:600px;
+  width:70%;
+  border-radius:15px;
+box-shadow: -1px 0px 24px -14px var(--shadow-color);
+overflow-y:scroll;
+}
+.window-topheader{
+  position:fixed;
+  width:70%;
+  background:var(--window-topheader-bg);
+  height:33px;
+  padding-top:18.5px;
+  border-radius:15px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.pointview{
+  display:flex;
+  flex-direction:row;
+  margin-left:10.5px;
+  padding-left:22px;
+}
+.point[bg="green"]{
+  background:#58cb2e;
+}
+.point[bg="yellow"]{
+  background:#f5d827;
+}
+.point[bg="red"]{
+  background:#e14c44;
+}
+.point{
+  border-radius: 100%;
+  padding: 8.6px;
+  margin-right:12px;
+}
+#title-window{
+  position:absolute;
+  transform:translate(-50%,-50%);
+  -ms-transform:translate(-50%,-50%);
+  margin-top:-9.35px;
+  left:50%;
+  white-space:nowrap;
+}
+.input-view{
+  margin-top:14px;
+  display:flex;
+  margin-bottom:7px;
+  padding-left:17px;
+}
+#input-title{
+  color:var(--green);
+  font-size:16.25px;
+}
+#input-dots{
+
+}
+#input-path{
+  color:var(--blue);
+  font-size:16.25px;
+}
+#input{
+  background:transparent;
+  border:none;
+  outline:none;
+  margin-left:6px;
+  margin-right:20px;
+  font-size:16.25px;
+  flex:1;
+}
+#important-word{
+  color:var(--yellow);
+}
+.start-view{
+  margin-top:68px;
+}
+.help-view{
+  padding-left:17px;
+}
+.help-view p{
+  font-size:15.25px;
+}
+.pinted-content-view{
+  margin-bottom:1px;
+  border-radius:8px;
+  width:max-content;
+  padding-left:17px;
+}
+.pinted-content-view p{
+  font-size:15.25px;
+}
+#routes-view{
+  display:inline-block;
+  margin-top:12px;
+  margin-right:16px;
+  padding-left:17px;
+}
+#routes-p{
+  cursor:pointer;
+}
+#isfolder{
+  color:var(--green);
+}
+#ASCII{
+    font-family:monospace;
+    font-size:17px;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+/* Only FireFox */
+html {scrollbar-color: rgb(180,180,180) transparent;}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(140,140,140);
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+  border-radius: 12px;
+}
+#ASCII-title{
+    margin-top:12px;
+    margin-left:26px;
+    margin-bottom:75px;
+}
+.body-page{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-top:50px;
+}
+  @media (max-width:1350px){
+    .window{
+      width:85%;
+    }
+    .window-topheader{
+      width:85%;
+    }
+  }
+  @media (max-width:989px){
+    #title-window{
+      font-size:14.4px;
+    }
+    .point{
+  padding: 7.5px;
+}
+  }
+
+  @media (max-width:870px){
+    .window{
+      width:92%;
+    }
+    .window-topheader{
+      width:92%;
+    }
+  }
+  @media (max-width:617px){
+    #input-path{
+      display:none;
+    }
+  }
+  @media (max-width:696px){
+  #ASCII-title{
+    font-size:13.75px;
+  }
+  p{
+    font-size:13px !important;
+  }
+  .ASCII-home{
+    font-size:12.25px !important;
+  }
+  .ASCII-information{
+    font-size:11px !important;
+  }
+  .ASCII-about{
+    font-size:12.5px !important;
+  }
+  .ASCII-another{
+    font-size:11.5px !important;
+  }
+  .ASCII-error{
+    font-size:8.5px !important;
+  }
+    #title-window{
+      margin-left:50px;
+    }
+  }
+  @media (max-width:696px){
+    #bash-help-text{
+    font-size:13px !important;
+    margin-right:10px;
+  }
+  #input-title, #input-path, #input{
+    font-size:13px !important;
+  }
+    #title-window{
+      font-size:13px !important;
+      margin-top:-7px;
+    }
+    .point{
+  padding: 6.5px;
+}
+  }
+  @media (max-width:531px){
+    #title-window{
+      font-size:12px !important;
+      margin-top:-7px;
+    }
+    .point{
+  padding: 6px;
+}
+  }
+  @media (max-width:495px){
+    #title-window{
+      margin-left:20px;
+    }
+    #bash-router-text{
+    display:block;
+  }
+  #bash-router-path{
+    display:none;
+  }
+}
+@media (min-width:2000px){
+  .window{
+    margin-top:180px;
+    height:750px;
+  }
+}
+@media (max-width:1999px){
+  .window{
+    margin-top:120px;
+    height:650px;
+  }
+}
+@media (max-width:1400px){
+  .window{
+    margin-top:120px;
+    height:600px;
+  }
+}
+@media (max-width:696px){
+  .window{
+    margin-top:90px;
+    height:530px;
+  }
+}

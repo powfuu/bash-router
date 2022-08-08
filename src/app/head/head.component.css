@@ -1,0 +1,35 @@
+#app-title{
+  font-size:22px;
+  display:inline-block;
+  margin-left:59px;
+  margin-top:8.5px;
+}
+#themeSwitcher{
+  font-size:28px;
+  justify-content: flex-end;
+  float:right;
+  display:inline-block;
+  margin-right:55px;
+  cursor:pointer;
+}
+#logo{
+  display:inline-block;
+  height:45px;
+  position:absolute;
+  width:45px;
+}
+  @media (max-width:696px){
+    #logo{
+      height:35px;
+      width:35px;
+      margin-top:-5px;
+    }
+    #app-title{
+    margin-left:46px;
+    margin-top:3px;
+  }
+  #themeSwitcher{
+    font-size:25px;
+    margin-top:-1px;
+  }
+  }
