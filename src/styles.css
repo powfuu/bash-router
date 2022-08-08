@@ -45,7 +45,6 @@ html,body{
 .window{
   position:relative;
   background:var(--background-color-window);
-  height:600px;
   width:70%;
   border-radius:15px;
 box-shadow: -1px 0px 24px -14px var(--shadow-color);
@@ -283,7 +282,7 @@ html {scrollbar-color: rgb(180,180,180) transparent;}
 @media (max-width:1999px){
   .window{
     margin-top:120px;
-    height:650px;
+    height:750px;
   }
 }
 @media (max-width:1400px){
